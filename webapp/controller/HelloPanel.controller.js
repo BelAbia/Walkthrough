@@ -13,8 +13,8 @@ sap.ui.define([
           // show message
           MessageToast.show(sMsg);
        },
-       onOpenDialog : function () {
 
+       onOpenDialog : function () {
            // create dialog lazily
            if (!this.pDialog) {
                this.pDialog = this.loadFragment({
@@ -28,6 +28,10 @@ sap.ui.define([
 
        onCloseDialog : function () {
            this.byId("helloDialog").close();
+       },
+
+       onImprimirConsoleLog : function(){
+        console.log("botao esta funcionando");
        }
     });
  });
